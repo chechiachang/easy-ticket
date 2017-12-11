@@ -1,4 +1,4 @@
-FROM golang:latest
+FROM golang:1.9.2
 RUN go get github.com/chechiachang/easy-ticket
 RUN go install github.com/chechiachang/easy-ticket
 ENTRYPOINT /go/bin/easy-ticket
