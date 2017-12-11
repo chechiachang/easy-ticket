@@ -7,6 +7,8 @@ install-compose-up:
 up:
 	sudo docker-compose up
 
-build:
+image:
 	sudo docker build -f Dockerfile.quickstart -t "chechiachang/easy-ticket" .
 
+push:
+	sudo docker push chechiachang/easy-ticket 
